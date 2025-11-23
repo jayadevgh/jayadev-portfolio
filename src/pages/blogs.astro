@@ -1,0 +1,119 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import BlogsProfile from "../assets/images/profilepictures/suitcaraurapic.png";
+---
+
+<BaseLayout title="Blogs">
+  <section class="max-w-4xl mx-auto">
+    <div class="flex items-center gap-6 mb-12">
+      <img 
+        src={BlogsProfile.src}
+        alt="Profile"
+        class="w-24 h-24 rounded-full object-cover border-2 border-white/20 shadow-lg"
+      />
+      <div>
+        <h1 class="text-4xl font-bold mb-2">Blogs</h1>
+        <p class="text-white/70">Writing about machine learning, deep learning, and AI systems.</p>
+      </div>
+    </div>
+
+    <div class="space-y-6">
+      <!-- Blog 1: BPE -->
+      <article class="bg-gradient-to-br from-surface/60 to-surface/30 p-6 rounded-xl border border-white/10 hover:border-accent/50 hover:shadow-lg hover:shadow-accent/10 transition-all cursor-pointer group relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-32 h-32 bg-accent/5 rounded-full blur-3xl -mr-16 -mt-16 group-hover:bg-accent/10 transition"></div>
+        <a 
+          href="https://medium.com/p/4b5a5f81012c" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          class="block relative z-10"
+        >
+          <div class="flex items-start justify-between gap-4 mb-3">
+            <h2 class="text-2xl font-semibold group-hover:text-accent transition flex-1">
+              Breaking Down BPE: The Secret Alphabet of ChatGPT
+            </h2>
+            <svg class="w-6 h-6 text-white/40 group-hover:text-accent transition flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+            </svg>
+          </div>
+          <div class="flex items-center gap-3 text-white/60 text-sm">
+            <span class="flex items-center gap-1">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+              8 min read
+            </span>
+            <span>•</span>
+            <span>Sep 30, 2025</span>
+            <span>•</span>
+            <span class="text-accent group-hover:underline">View story →</span>
+          </div>
+        </a>
+      </article>
+
+      <!-- Blog 2: Bigram Model -->
+      <article class="bg-gradient-to-br from-surface/60 to-surface/30 p-6 rounded-xl border border-white/10 hover:border-accent/50 hover:shadow-lg hover:shadow-accent/10 transition-all cursor-pointer group relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-32 h-32 bg-accent/5 rounded-full blur-3xl -mr-16 -mt-16 group-hover:bg-accent/10 transition"></div>
+        <a 
+          href="https://medium.com/p/d9338f52cf47" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          class="block relative z-10"
+        >
+          <div class="flex items-start justify-between gap-4 mb-3">
+            <h2 class="text-2xl font-semibold group-hover:text-accent transition flex-1">
+              I followed Karpathy's bigram model (makemore) — Here's what I learned
+            </h2>
+            <svg class="w-6 h-6 text-white/40 group-hover:text-accent transition flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+            </svg>
+          </div>
+          <div class="flex items-center gap-3 text-white/60 text-sm">
+            <span class="flex items-center gap-1">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+              9 min read
+            </span>
+            <span>•</span>
+            <span>Sep 22, 2025</span>
+            <span>•</span>
+            <span class="text-accent group-hover:underline">View story →</span>
+          </div>
+        </a>
+      </article>
+
+      <!-- Blog 3: Micrograd -->
+      <article class="bg-gradient-to-br from-surface/60 to-surface/30 p-6 rounded-xl border border-white/10 hover:border-accent/50 hover:shadow-lg hover:shadow-accent/10 transition-all cursor-pointer group relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-32 h-32 bg-accent/5 rounded-full blur-3xl -mr-16 -mt-16 group-hover:bg-accent/10 transition"></div>
+        <a 
+          href="https://medium.com/p/10c827938178" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          class="block relative z-10"
+        >
+          <div class="flex items-start justify-between gap-4 mb-3">
+            <h2 class="text-2xl font-semibold group-hover:text-accent transition flex-1">
+              I followed Karpathy's micrograd video — Here is what I learned
+            </h2>
+            <svg class="w-6 h-6 text-white/40 group-hover:text-accent transition flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+            </svg>
+          </div>
+          <div class="flex items-center gap-3 text-white/60 text-sm">
+            <span class="flex items-center gap-1">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+              6 min read
+            </span>
+            <span>•</span>
+            <span>Sep 17, 2025</span>
+            <span>•</span>
+            <span class="text-accent group-hover:underline">View story →</span>
+          </div>
+        </a>
+      </article>
+    </div>
+  </section>
+</BaseLayout>
+
