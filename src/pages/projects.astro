@@ -1,6 +1,7 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import ProjectsProfile from "../assets/images/profilepictures/jayboatseattlecitybackground.png";
+import BondDeck from "../assets/pdf/DubHacks Presentation.pdf";
 ---
 
 <BaseLayout title="Projects">
@@ -15,6 +16,259 @@ import ProjectsProfile from "../assets/images/profilepictures/jayboatseattlecity
         <h1 class="text-4xl font-bold mb-2">Projects</h1>
         <p class="text-white/70">Building at the intersection of systems, machine learning, and creative technology.</p>
       </div>
+    </div>
+
+    <!-- Timeline -->
+    <div class="mb-16 relative">
+      <div class="absolute left-4 top-0 bottom-0 w-0.5 bg-white/20"></div>
+      <div class="space-y-8 relative">
+        <!-- Bond -->
+        <div class="flex gap-6 relative">
+          <div class="flex-shrink-0 w-8 h-8 rounded-full bg-accent border-4 border-background relative z-10 flex items-center justify-center">
+            <div class="w-3 h-3 rounded-full bg-background"></div>
+          </div>
+          <div class="flex-1 pb-8">
+            <div 
+              class="bg-surface/50 p-5 rounded-xl border border-white/10 hover:border-accent/50 cursor-pointer transition-all"
+              onclick="document.getElementById('bond-app').scrollIntoView({ behavior: 'smooth', block: 'start' })"
+            >
+              <div class="flex items-start justify-between mb-2">
+                <h3 class="text-xl font-semibold">Bond — Proximity-based Social Matching</h3>
+                <span class="text-white/50 text-sm whitespace-nowrap ml-4">Oct 2025</span>
+              </div>
+              <p class="text-white/60 text-sm mb-1">Jetpack Compose BLE app</p>
+              <p class="text-white/50 text-xs">Kotlin • Firebase • AWS Bedrock</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Transformer-based Linguistic Corruption Scoring -->
+        <div class="flex gap-6 relative">
+          <div class="flex-shrink-0 w-8 h-8 rounded-full bg-accent border-4 border-background relative z-10 flex items-center justify-center">
+            <div class="w-3 h-3 rounded-full bg-background"></div>
+          </div>
+          <div class="flex-1 pb-8">
+            <div 
+              class="bg-surface/50 p-5 rounded-xl border border-white/10 hover:border-accent/50 cursor-pointer transition-all"
+              onclick="document.getElementById('transformer-scorer').scrollIntoView({ behavior: 'smooth', block: 'start' })"
+            >
+              <div class="flex items-start justify-between mb-2">
+                <h3 class="text-xl font-semibold">Transformer-based Linguistic Corruption Scoring</h3>
+                <span class="text-white/50 text-sm whitespace-nowrap ml-4">Summer 2025</span>
+              </div>
+              <p class="text-white/60 text-sm mb-1">Independent research build</p>
+              <p class="text-white/50 text-xs">PyTorch • NumPy</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- GPT From Scratch -->
+        <div class="flex gap-6 relative">
+          <div class="flex-shrink-0 w-8 h-8 rounded-full bg-accent border-4 border-background relative z-10 flex items-center justify-center">
+            <div class="w-3 h-3 rounded-full bg-background"></div>
+          </div>
+          <div class="flex-1 pb-8">
+            <div 
+              class="bg-surface/50 p-5 rounded-xl border border-white/10 hover:border-accent/50 cursor-pointer transition-all"
+              onclick="document.getElementById('gpt-from-scratch').scrollIntoView({ behavior: 'smooth', block: 'start' })"
+            >
+              <div class="flex items-start justify-between mb-2">
+                <h3 class="text-xl font-semibold">GPT From Scratch</h3>
+                <span class="text-white/50 text-sm whitespace-nowrap ml-4">Summer 2025</span>
+              </div>
+              <p class="text-white/60 text-sm mb-1">Tokenizer + Transformer implementation</p>
+              <p class="text-white/50 text-xs">NumPy • Python</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Deep Learning From Scratch -->
+        <div class="flex gap-6 relative">
+          <div class="flex-shrink-0 w-8 h-8 rounded-full bg-accent border-4 border-background relative z-10 flex items-center justify-center">
+            <div class="w-3 h-3 rounded-full bg-background"></div>
+          </div>
+          <div class="flex-1">
+            <div 
+              class="bg-surface/50 p-5 rounded-xl border border-white/10 hover:border-accent/50 cursor-pointer transition-all"
+              onclick="document.getElementById('dl-microframework').scrollIntoView({ behavior: 'smooth', block: 'start' })"
+            >
+              <div class="flex items-start justify-between mb-2">
+                <h3 class="text-xl font-semibold">Deep Learning From Scratch (Microframework)</h3>
+                <span class="text-white/50 text-sm whitespace-nowrap ml-4">Sept 2022 — Nov 2023</span>
+              </div>
+              <p class="text-white/60 text-sm mb-1">Autodiff + DL playground</p>
+              <p class="text-white/50 text-xs">Python • NumPy</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="space-y-8">
+      <!-- Bond -->
+      <article id="bond-app" class="bg-surface/50 p-6 rounded-xl border border-white/10 hover:border-white/20 transition scroll-mt-8">
+        <div class="flex items-start justify-between gap-4 mb-4">
+          <div>
+            <h2 class="text-2xl font-semibold mb-1">Bond — Proximity-based Social Matching App</h2>
+            <p class="text-white/60 text-sm">Builder + teammate • October 2025 • Android</p>
+          </div>
+          <div class="flex flex-col sm:flex-row gap-3 whitespace-nowrap">
+            <a 
+              href="https://github.com/jlu31/BLEBonders" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              class="text-accent hover:text-accent/80 text-sm underline"
+            >
+              GitHub →
+            </a>
+            <a 
+              href="https://devpost.com/software/bond-xuhodw" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              class="text-accent hover:text-accent/80 text-sm underline"
+            >
+              Devpost →
+            </a>
+            <a 
+              href={BondDeck} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              class="text-accent hover:text-accent/80 text-sm underline"
+            >
+              Deck PDF →
+            </a>
+          </div>
+        </div>
+
+        <p class="text-white/80 mb-6 leading-relaxed">
+          Bond is an app detects nearby users using Bluetooth Low Energy (BLE) and lets people “bond” when both sides accept. Bond also compares user embeddings to generate similarity scores, creates personalized icebreakers, and tracks time spent with people you've bonded with.
+        </p>
+
+        <div class="bg-surface/30 p-5 rounded-lg border border-white/5">
+          <h3 class="text-lg font-medium mb-3 text-white/90">What I built</h3>
+          <ul class="space-y-2 text-white/70 text-sm leading-relaxed">
+            <li>• created the full Android app in Kotlin with Jetpack Compose UI</li>
+            <li>• implemented BLE advertising + scanning with custom service data payloads (`BND&lt;username&gt;`)</li>
+            <li>• set up pairing logic in Firestore to manage requests, bond states, and time tracking</li>
+            <li>• integrated AWS Bedrock models that compared user embeddings and surfaced similarity highlights</li>
+            <li>• ran field tests around campus where BLE stayed stable up to ~45–48 meters</li>
+            <li>• coordinated backend interfaces with teammates who owned the ML voice → transcript → embeddings pipeline</li>
+          </ul>
+          <p class="mt-4 text-sm text-white/60"><strong class="text-white/80">Tools/Stack:</strong> Kotlin, Jetpack Compose, BLE, Firebase Auth & Firestore, AWS Bedrock, Android Lifecycle</p>
+        </div>
+      </article>
+
+      <!-- Transformer-based Linguistic Corruption Scoring -->
+      <article id="transformer-scorer" class="bg-surface/50 p-6 rounded-xl border border-white/10 hover:border-white/20 transition scroll-mt-8">
+        <div class="flex items-start justify-between gap-4 mb-4">
+          <div>
+            <h2 class="text-2xl font-semibold mb-1">Transformer-based Linguistic Corruption Scoring</h2>
+            <p class="text-white/60 text-sm">Independent project • Summer 2025</p>
+          </div>
+          <a 
+            href="https://github.com/jayadevgh/TransformerSentenceScoring" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            class="text-accent hover:text-accent/80 text-sm underline whitespace-nowrap"
+          >
+            GitHub →
+          </a>
+        </div>
+
+        <p class="text-white/80 mb-6 leading-relaxed">
+          This was a summer build where I wanted to see how far small Transformers could go on sentence-quality scoring. I focused on lightweight decoder-only models that could spot subtle corruptions without needing a massive LLM behind them.
+        </p>
+
+        <div class="bg-surface/30 p-5 rounded-lg border border-white/5">
+          <h3 class="text-lg font-medium mb-3 text-white/90">What I built</h3>
+          <ul class="space-y-2 text-white/70 text-sm leading-relaxed">
+            <li>• trained two small decoder-only Transformers (~12M params) — one char-level, one BPE-level</li>
+            <li>• built a scoring system based on average negative log-likelihood to quantify how “broken” a sentence felt</li>
+            <li>• processed ~1M training lines and hit roughly a 0.42 drop in mean NLL during training</li>
+            <li>• evaluated on 100k corrupted sentences and reached about 93% classification accuracy</li>
+            <li>• experimented with calibration and smoothing so scoring stayed stable across corruption types</li>
+          </ul>
+          <p class="mt-4 text-sm text-white/60"><strong class="text-white/80">Tools/Stack:</strong> PyTorch, NumPy, custom Transformers, BPE tokenizer</p>
+        </div>
+      </article>
+
+      <!-- GPT From Scratch -->
+      <article id="gpt-from-scratch" class="bg-surface/50 p-6 rounded-xl border border-white/10 hover:border-white/20 transition scroll-mt-8">
+        <div class="flex items-start justify-between gap-4 mb-4">
+          <div>
+            <h2 class="text-2xl font-semibold mb-1">GPT From Scratch</h2>
+            <p class="text-white/60 text-sm">Personal study build • Summer 2025</p>
+          </div>
+          <div class="flex flex-col sm:flex-row gap-3 whitespace-nowrap">
+            <a 
+              href="https://github.com/jayadevgh/GPT-From-Scratch" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              class="text-accent hover:text-accent/80 text-sm underline"
+            >
+              GitHub →
+            </a>
+            <a 
+              href="https://medium.com/@jayadevgh" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              class="text-accent hover:text-accent/80 text-sm underline"
+            >
+              Medium posts →
+            </a>
+          </div>
+        </div>
+
+        <p class="text-white/80 mb-6 leading-relaxed">
+          I wanted to demystify language models, so I built one from the ground up with just NumPy. I did NOT use any existing frameworks! Just careful debugging, lots of notebook scribbles, and write-ups so future me could remember what actually worked.
+        </p>
+
+        <div class="bg-surface/30 p-5 rounded-lg border border-white/5">
+          <h3 class="text-lg font-medium mb-3 text-white/90">What I built</h3>
+          <ul class="space-y-2 text-white/70 text-sm leading-relaxed">
+            <li>• implemented a full BPE tokenizer, including merge training, vocab building, and encode/decode routines</li>
+            <li>• wrote a minimal Transformer: attention, MLP blocks, residual connections, and positional encodings</li>
+            <li>• trained on lightweight corpora and reached roughly the perplexity of nanoGPT’s tiny configs</li>
+            <li>• wrote companion blog posts explaining tokenizer construction, attention math, and forward/backward passes</li>
+            <li>• explored how initialization schemes impacted stability so I could keep runs from diverging</li>
+          </ul>
+          <p class="mt-4 text-sm text-white/60"><strong class="text-white/80">Tools/Stack:</strong> NumPy, Python, BPE, Transformer architectures</p>
+        </div>
+      </article>
+
+      <!-- Deep Learning From Scratch -->
+      <article id="dl-microframework" class="bg-surface/50 p-6 rounded-xl border border-white/10 hover:border-white/20 transition scroll-mt-8">
+        <div class="flex items-start justify-between gap-4 mb-4">
+          <div>
+            <h2 class="text-2xl font-semibold mb-1">Deep Learning From Scratch (Microframework)</h2>
+            <p class="text-white/60 text-sm">Slow-burn project • Sept 2022 — Nov 2023</p>
+          </div>
+          <a 
+            href="https://github.com/jayadevgh/Nano-Neural-Networks" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            class="text-accent hover:text-accent/80 text-sm underline whitespace-nowrap"
+          >
+            GitHub →
+          </a>
+        </div>
+
+        <p class="text-white/80 mb-6 leading-relaxed">
+          Before the GPT build, I spent a year writing my own DL microframework. It forced me to understand tensors, autograd, and optimizers in a real, hands-on way — and it became my playground for testing ideas.
+        </p>
+
+        <div class="bg-surface/30 p-5 rounded-lg border border-white/5">
+          <h3 class="text-lg font-medium mb-3 text-white/90">What I built</h3>
+          <ul class="space-y-2 text-white/70 text-sm leading-relaxed">
+            <li>• constructed a tensor class with broadcasting, slicing, and basic ops</li>
+            <li>• implemented full reverse-mode autodiff with computational graphs and backprop</li>
+            <li>• built layers like Linear, ReLU, softmax, layernorm, plus a couple of convolution kernels</li>
+            <li>• wrote optimizers (SGD, Adam) and tested on MNIST-style datasets</li>
+            <li>• trained small MLPs and conv nets end-to-end purely with NumPy</li>
+          </ul>
+          <p class="mt-4 text-sm text-white/60"><strong class="text-white/80">Tools/Stack:</strong> Python, NumPy, autodiff, optimization algorithms, MLPs</p>
+        </div>
+      </article>
     </div>
   </section>
 </BaseLayout>

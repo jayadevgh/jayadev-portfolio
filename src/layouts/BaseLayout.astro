@@ -27,5 +27,31 @@ const { title = "Jayadev" } = Astro.props;
     <main class="px-8 py-12">
       <slot />
     </main>
+
+    <!-- Global Scroll to Top Button -->
+    <button
+      id="scrollToTop"
+      onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
+      class="fixed bottom-8 right-8 w-12 h-12 rounded-full bg-accent hover:bg-accent/80 text-white shadow-lg transition-all opacity-0 pointer-events-none z-50 flex items-center justify-center"
+      aria-label="Scroll to top"
+    >
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+      </svg>
+    </button>
+
+    <script>
+      const scrollToTopBtn = document.getElementById('scrollToTop');
+
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 300) {
+          scrollToTopBtn.classList.remove('opacity-0', 'pointer-events-none');
+          scrollToTopBtn.classList.add('opacity-100');
+        } else {
+          scrollToTopBtn.classList.add('opacity-0', 'pointer-events-none');
+          scrollToTopBtn.classList.remove('opacity-100');
+        }
+      });
+    </script>
   </body>
 </html>
